@@ -95,6 +95,7 @@ function ocp = setup_ocp(obj, simulink_opts)
     ocp.solver_options.eps_sufficient_descent = obj.opts_struct.eps_sufficient_descent;
     ocp.solver_options.qp_solver_ric_alg = obj.opts_struct.qp_solver_ric_alg;
     ocp.solver_options.qp_solver_cond_ric_alg = obj.opts_struct.qp_solver_cond_ric_alg;
+    ocp.solver_options.qp_solver_mu0 = obj.opts_struct.qp_solver_mu0;
     if isfield(obj.opts_struct, 'qp_solver_cond_N')
         ocp.solver_options.qp_solver_cond_N = obj.opts_struct.qp_solver_cond_N;
     else
